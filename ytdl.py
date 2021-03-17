@@ -25,7 +25,7 @@ def main():
     searchTerm = argv[1]
     count = 5
     if len(argv) == 3:
-        count = argv[2]
+        count = int(argv[2])
     videosSearch = VideosSearch(searchTerm, limit=count)
     v_dict = videosSearch.result()
     for key in v_dict:
